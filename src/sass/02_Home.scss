@@ -1,0 +1,32 @@
+// =============================================================================
+// import base
+// =============================================================================
+
+@import '../sass/base/general';
+@import '../sass/base/normalize';
+
+// =============================================================================
+// import patial 
+// =============================================================================
+
+@import '../sass/partial/function';
+@import '../sass/partial/mixin';
+@import '../sass/partial/typography';
+
+// =============================================================================
+// import component
+// =============================================================================
+
+@import '../sass/components/is-active';
+@import '../sass/components/header';
+@import '../sass/components/02_Home/01-hero';
+@import '../sass/components/02_Home/02-work';
+@import '../sass/components/footer';
+
+// =============================================================================
+// import layout
+// =============================================================================
+
+@import '../sass/layouts/flex';
+@import '../sass/layouts/l-container';
+

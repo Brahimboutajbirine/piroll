@@ -1,0 +1,72 @@
+footer{
+    background-color: #141414;
+    .foot{
+        padding-top: 95px;
+        padding-bottom: 95px;
+        flex-wrap: wrap;
+        .one{
+            padding-right: 235px;
+            h2{
+                font-size: 18px;
+                font-family: $mon;
+                color: rgb(255, 255, 255);
+                line-height: 1;
+                padding-bottom: reset-size(18, 1, 30);                  
+            }
+            p{
+                font-size: 15px;
+                font-family: $nun;
+                color: rgb(188, 188, 188);
+                line-height: 1.6;     
+                max-width: 228px;             
+            }
+        }
+        .two{
+            padding-right: 140px;
+            p{
+                font-size: 15px;
+                font-family: $nun;
+                color: rgb(188, 188, 188);
+                line-height: 1.6;                      
+                
+            }
+        }
+        .three{
+            ul li a{
+                font-size: 15px;
+                font-family: $nun;
+                color: rgb(188, 188, 188);
+                line-height: 1.6;                  
+            }
+            .un{
+                padding-right: 50px;
+            }
+            .deux{
+                padding-right: 125px;
+            }
+        }
+    }
+    @media(max-width: 1225px){
+        .foot{
+            .one{
+                padding-right: 35px;
+            }
+        }
+    }
+    @media(max-width: 1000px){
+        .foot{
+            .three{
+                flex-basis: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+    @media(max-width: 670px){
+        .foot{
+            .two{
+                margin-top: 20px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+.button{
+    .arrow{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        justify-content: space-between;
+        .left a,
+        .right a{
+            font-size: 12px;
+            font-family: $mon;
+            color: rgb(29, 29, 29);
+            text-transform: uppercase;
+            line-height: 1;
+            text-align: left;              
+        }
+        .middle{
+            width: 18px;
+            height: 18px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .box{
+                width: 39%;
+                height: 6px;
+                background-color: #000;
+            }
+        }
+    }
+}

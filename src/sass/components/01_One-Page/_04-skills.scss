@@ -1,0 +1,78 @@
+.skills{
+    background-color: #f8f9f9;
+    .left{
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 30px;
+            font-family: $mon;
+            color: rgb(23, 23, 23);
+            line-height: 2.8;
+            text-align: left;   
+            align-self: flex-start;
+            padding-left: 105px;
+            padding-bottom: reset-size(30, 2.8, 40);           
+        }
+        ul li{
+            font-size: 12px;
+            font-family: $mon;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            line-height: 2.5; 
+            h3{
+                span{
+                    padding-left: 15px;
+                }
+            }
+            .bar{
+                background-color: rgb(216, 216, 216);
+                width: 500px;
+                height: 3px;  
+                margin-top: 20px;
+                margin-bottom: 40px;
+                .one{
+                    background-color: rgb(16, 201, 195);
+                    width: 336px;
+                    height: 3px;                      
+                }  
+                .two{
+                    background-color: rgb(16, 201, 195);
+                    width: 428px;
+                    height: 3px;
+                      
+                }   
+                .three{
+                    background-color: rgb(16, 201, 195);
+                    width: 280px;
+                    height: 3px;                      
+                }           
+            }             
+        }
+    }
+    .right{
+        flex-basis: 50%;
+        img{
+            width: 100%;
+        }
+    }    
+}
+@media screen and (max-width: 1080px) {
+        .skills{
+            .skill{
+                flex-wrap: wrap;
+                .left,
+                .right{
+                    flex-basis: 100%;
+                }
+                .left{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    h2{
+                        padding-left: 0px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }

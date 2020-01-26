@@ -1,0 +1,25 @@
+.banner{
+    background-color: #3e3e3e;
+    text-align: center;
+    h1{
+        font-size: 38px;
+        font-family: $mon;
+        color: rgb(255, 255, 255);
+        line-height: 1.263; 
+        margin-top: reset-size(38, 1.263, 0);         
+        margin-bottom: reset-size(38, 1.263, 0);         
+        padding-top: reset-size(38, 1.263, 120);         
+        padding-bottom: reset-size(38, 1.263, 40);         
+    }
+    p{
+        font-size: 18px;
+        font-family: $nun;
+        color: rgb(255, 255, 255);
+        line-height: 1.556;
+        text-align: center;          
+        padding-top: reset-size(18, 1.556, 0);
+        padding-bottom: reset-size(18, 1.556, 120);
+        max-width: 520px;
+        margin: 0 auto;
+    }
+}

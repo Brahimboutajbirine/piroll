@@ -1,0 +1,43 @@
+.slider{
+    background-color: #e9e9e9;
+    .slide{
+        width: 100%;
+        text-align: left;
+        order: 2;
+        .contenu{
+            width: 50%;
+            align-self: flex-end;
+            h1{
+                padding-top: reset-size(38, 1.263, 170);
+                font-size: 38px;
+                font-family: $mon;
+                color: rgb(29, 29, 29);
+                line-height: 1.263;                  
+            }
+            p{
+                font-size: 18px;
+                font-family: $nun;
+                color: rgb(120, 120, 120);
+                line-height: 1.556; 
+                padding-top: reset-size(18, 1.556, 38);                 
+            }
+            button{
+                background-color: rgb(16, 201, 195); 
+                border: none;
+                font-size: 12px;
+                font-family: $mon;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                line-height: 1;   
+                padding: 23px 46px;     
+                margin-top: 40px;
+                margin-bottom: 200px;                           
+            }
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .contenu{
+            width: 100% !important;
+        }
+    }
+}

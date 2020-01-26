@@ -1,0 +1,15 @@
+// =============================================================================
+// import fonts
+// =============================================================================
+
+@include font-face('WorkSans', '../fonts/WorkSans-Regular', 400, normal, ttf);
+@include font-face('NunitoSans', '../fonts/NunitoSans-Regular', 400, normal, ttf);
+@include font-face('Montserrat', '../fonts/Montserrat-Medium', 500, normal, ttf);
+
+// =============================================================================
+// variables
+// =============================================================================
+
+$mon: 'Montserrat', sans-serif;
+$nun: 'Nunito Sans', sans-serif;
+$wor: 'Work Sans', sans-serif;

@@ -1,0 +1,45 @@
+.aboutMe{
+    background-color: #f5f5f5;
+    .about{
+        flex-wrap: wrap;
+    }
+    .left{
+        flex-basis: 50%;
+        img{width: 100%;}
+    }
+    .right{
+        flex-basis: 50%;
+        padding-left: 85px;
+        h2{
+            font-size: 30px;
+            font-family: $mon;
+            color: rgb(23, 23, 23);
+            line-height: 2.8;
+            text-align: left;   
+            padding-top: reset-size(30, 2.8, 135);           
+            padding-bottom: reset-size(30, 2.8, 40);           
+        }
+        p{
+            font-size: 16px;
+            font-family: $nun;
+            color: rgb(120, 120, 120);
+            line-height: 1.5;
+            text-align: left;
+            max-width: 465px;              
+            &:nth-of-type(1){
+                padding-top: reset-size(16, 1.5, 0);
+                padding-bottom: reset-size(16, 1.5, 0);
+            }
+            &:nth-of-type(2){
+                padding-top: reset-size(16, 1.5, 35);
+                padding-bottom: reset-size(16, 1.5, 35);
+            }
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        .left,
+        .right{
+            flex-basis: 100%;
+        }
+    }
+}

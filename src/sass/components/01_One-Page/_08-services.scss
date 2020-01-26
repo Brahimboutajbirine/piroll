@@ -1,0 +1,42 @@
+.services{
+    background-color: #f5f5f5;
+    .serve{
+        flex-wrap: wrap;
+        padding-top: 100px;
+        padding-bottom: 40px;
+        .service{
+            flex-basis: 25%;
+            text-align: center;
+            img{
+                width: 44px;
+                height: 44px;
+            }
+            h4{
+                font-size: 12px;
+                font-family: $mon;
+                color: rgb(25, 25, 25);
+                text-transform: uppercase;
+                line-height: 2.5;
+                padding-top: reset-size(12, 2.5, 28);                  
+            }
+            p{
+                font-size: 16px;
+                font-family: $nun;
+                color: rgb(120, 120, 120);
+                line-height: 1.5;
+                padding-top: reset-size(16, 1.5, 20);                  
+                padding-bottom: reset-size(16, 1.5, 60);                  
+            }
+        }
+    }
+    @media screen and (max-width: 800px){
+        .serve .service{
+            flex-basis: 50%;
+        }
+    }
+    @media screen and (max-width: 500px){
+        .serve .service{
+            flex-basis: 100%;
+        }
+    }
+}

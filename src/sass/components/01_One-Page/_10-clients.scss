@@ -1,0 +1,14 @@
+.clients{
+    .myClient{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    @media screen and (max-width: 500px) {
+        .client{
+            flex-basis: 100%;
+            text-align: center;
+        }
+    }
+}

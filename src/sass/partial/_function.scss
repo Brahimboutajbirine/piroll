@@ -1,0 +1,46 @@
+// =============================================================================
+// px to percentage
+// =============================================================================
+
+
+@function pxtopercent($target, $parent: 16) {
+	@return percentage($target / $parent);
+}
+
+// =============================================================================
+// remove line height to achieve exact psd padding or margin top or bottom
+// =============================================================================
+
+
+@function reset-size($font-size, $line-height, $distance) {
+	$text-height: $font-size * $line-height;
+
+	$new-space : null; 
+	@if $text-height > $font-size{
+		$new-space : ($text-height - $font-size) / 2;
+	} @else {
+		$new-space : ( $font-size - $text-height ) / 2;
+	}
+	
+	$real: $distance - $new-space + px;
+	
+	@return $real;
+}
+
+
+// =============================================================================
+// px to vw
+// =============================================================================
+
+
+$vw-viewport: 500;
+$vw-enable: true;
+
+@function get-vw($font){
+	@if $vw-enable{
+		$vw-context: $vw-viewport * 0.01 * 1px;	
+		@return $font / $vw-context * 1vw;
+	}
+  @return $font;
+}
+  

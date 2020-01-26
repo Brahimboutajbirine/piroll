@@ -1,0 +1,24 @@
+.hero{
+    background-color: #f6f6f6;
+    .heros{
+        align-items: center;
+        h1{
+            font-size: 38px;
+            font-family: $mon;
+            color: rgb(23, 23, 23);
+            line-height: 2.211; 
+            padding-top: reset-size(38, 2.211, 100);             
+            padding-bottom: reset-size(38, 2.211, 35);             
+        }
+        p{
+            font-size: 18px;
+            font-family: $nun;
+            color: rgb(120, 120, 120);
+            line-height: 1.556;      
+            padding-top: reset-size(18, 1.556, 0);
+            padding-bottom: reset-size(18, 1.556, 100);
+            text-align: center;
+            max-width: 520px;        
+        }
+    }
+}

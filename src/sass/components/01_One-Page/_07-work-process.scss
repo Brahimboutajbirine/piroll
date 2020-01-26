@@ -1,0 +1,33 @@
+.process{
+    text-align: center;
+    h2{
+        font-size: 30px;
+        font-family: $mon;
+        color: rgb(25, 25, 25);
+        line-height: 2;
+        text-align: center;
+        padding-top: reset-size(30, 2, 100);          
+    }
+    p{
+        font-size: 16px;
+        font-family: $nun;
+        color: rgb(120, 120, 120);
+        line-height: 1.5;  
+        max-width: 500px;    
+        margin: 0 auto;
+        padding-top: reset-size(16, 1.5, 40);    
+        padding-bottom: reset-size(16, 1.5, 55);    
+    }
+    .video{
+        width: 85%; 
+        height: 570px;
+        background-color: #e9e9e9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 100px auto;
+        img{
+            height: fit-content;
+        }
+    }
+}

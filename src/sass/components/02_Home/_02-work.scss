@@ -1,0 +1,46 @@
+.works{
+    .wor{
+        flex-wrap: wrap;
+        .work{
+            justify-content: center;
+            align-items: center;
+            flex-basis: 25%;
+            height: 300px;
+            &:nth-of-type(1),
+            &:nth-of-type(3),
+            &:nth-of-type(6),
+            &:nth-of-type(8),
+            &:nth-of-type(9),
+            &:nth-of-type(11){
+                background-color: #838383;
+            }
+            &:nth-of-type(2),
+            &:nth-of-type(4),
+            &:nth-of-type(5),
+            &:nth-of-type(7),
+            &:nth-of-type(10),
+            &:nth-of-type(12){
+                background-color: #dddddd;
+            }
+            img{
+                width: fit-content;
+                display: none;
+            }
+            &:hover{
+                img{
+                    display: block;
+                }
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            .work{
+                flex-basis: 50%;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .work{
+                flex-basis: 100%;
+            }
+        }
+    } 
+}
